@@ -1,0 +1,285 @@
+:root {
+  --blue: #2196f3;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.blue {
+  color: var(--blue);
+}
+body {
+  font-family: "roboto", "Raleway", sans-serif;
+  text-decoration: none;
+  color: #212121;
+  width: 1600px;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.contacts-top {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+.contact-details-top {
+  display: inline-block;
+  font-size: 14px;
+}
+.logo-top a:link {
+  color: black;
+  text-decoration: none;
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 26px;
+}
+.logo-top a:visited {
+  color: black;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.top-links {
+  margin-left: 371px;
+  display: inline-flex;
+  margin-right: 0;
+}
+.top-links a {
+  color: #757575;
+  text-decoration: none;
+}
+.top-links a:hover {
+  color: var(--blue);
+}
+
+.nav {
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 46px;
+  margin-left: 93px;
+}
+.nav a:link {
+  color: black;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.nav a:visited {
+  color: black;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: var(--blue);
+}
+
+.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  color: black;
+}
+.filters {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-right: 8px;
+  margin-bottom: 50px;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #212121;
+}
+.project-type {
+  font-size: 16px;
+  color: #757575;
+  padding: 20px 24px;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+.footer {
+  color: white;
+  background-color: #2f303a;
+}
+.main-portfolio {
+  margin-bottom: 94px;
+}
+.contact-bottom {
+  font-style: normal;
+  padding-bottom: 60px;
+
+  text-align: left;
+}
+.banner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 200px 0 200px 0;
+}
+.intro {
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/backgroundimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1600px;
+  margin: 0;
+  text-align: center;
+}
+.slogan {
+  width: 696px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 44px;
+  justify-content: center;
+}
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "roboto";
+  cursor: pointer;
+  margin-right: 8px;
+  border: 0;
+  border-radius: 4px;
+  line-height: 26px;
+  padding: 6px 22px 6px 22px;
+}
+.button:hover {
+  background-color: var(--blue);
+  color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.contact-bottom-address {
+  font-style: normal;
+  text-align: left;
+}
+.contacts {
+  list-style-type: none;
+}
+.contact-detail {
+  padding-top: 9px;
+}
+.contact-bottom-links a:link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.contact-bottom-links a:hover {
+  color: var(--blue);
+}
+.logo-bottom {
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 26px;
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.logo-bottom a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+}
+.bluebutton {
+  background-color: var(--blue);
+  color: white;
+  width: 200px;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+.card {
+  flex-basis: calc((100% - 60px) / 3);
+  background-color: #ffffff;
+}
+.cardimg {
+  display: block;
+}
+.lorem {
+  display: flex;
+  margin: 0;
+  gap: 30px;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.ipsum {
+  color: #757575;
+}
+.about {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.what-we-do {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  text-align: center;
+  padding-bottom: 94px;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 1170px;
+  margin: auto;
+}
+.our-team {
+  background-color: #f5f4fa;
+  width: 1600px;
+  padding-bottom: 94px;
+}
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: black;
+}
+.role {
+  text-align: center;
+  color: #757575;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-member {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
