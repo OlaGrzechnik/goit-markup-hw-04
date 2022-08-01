@@ -28,6 +28,23 @@ body {
   display: inline-block;
   font-size: 14px;
 }
+.mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mail:hover svg {
+  fill: var(--blue);
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone:hover svg {
+  fill: var(--blue);
+}
+
 .logo-top a:link {
   color: black;
   text-decoration: none;
@@ -178,6 +195,7 @@ body {
 .contact-bottom-address {
   font-style: normal;
   text-align: left;
+  margin-top: 0;
 }
 .contacts {
   list-style-type: none;
@@ -228,12 +246,10 @@ body {
   list-style-type: none;
 }
 .card {
-  flex-basis: calc((100% - 60px) / 3);
   background-color: #ffffff;
 }
 .card:hover,
 .card:focus {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   max-width: 370px;
@@ -310,9 +326,7 @@ body {
   height: 70px;
   fill: black;
 }
-.icon:hover {
-  fill: var(--blue);
-}
+
 .social-list {
   display: flex;
   gap: 10px;
@@ -324,9 +338,7 @@ body {
   width: 20px;
   fill: #afb1b8;
 }
-.social-icon:hover {
-  fill: white;
-}
+
 .social-icon-circle {
   width: 44px;
   height: 44px;
@@ -334,6 +346,10 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-icon-circle:hover svg {
+  fill: white;
 }
 .social-icon-circle:hover {
   background-color: var(--blue);
@@ -341,15 +357,14 @@ body {
 .client-list {
   display: inline-flex;
   gap: 30px;
+  width: 1170px;
 }
 .client-icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
-.client-icon:hover {
-  fill: var(--blue);
-}
+
 .client-box {
   height: 92px;
   width: 170px;
@@ -359,10 +374,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+.client-box:hover svg {
+  fill: var(--blue);
+}
 .envelope-icon {
   width: 16px;
   height: 16px;
   fill: #757575;
+  margin-right: 10px;
 }
 .envelope-icon:hover {
   fill: var(--blue);
@@ -371,6 +390,7 @@ body {
   height: 16px;
   width: 10px;
   fill: #757575;
+  margin-right: 10px;
 }
 .phone-icon:hover {
   fill: var(--blue);
@@ -388,11 +408,18 @@ body {
 .social-icon-circle-footer:hover {
   background-color: var(--blue);
 }
+.social-icon-circle-footer:hover svg {
+  fill: white;
+}
 .footerflex {
   display: flex;
   gap: 70px;
+  align-items: top;
 }
 .joinus-header {
   font-size: 14px;
   font-weight: 700;
+}
+.joinus {
+  padding-top: 72px;
 }
