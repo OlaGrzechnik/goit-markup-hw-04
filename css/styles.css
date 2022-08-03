@@ -203,7 +203,7 @@ body {
 .contact-detail {
   padding-top: 9px;
 }
-.contact-bottom-links a:link {
+.contact-bottom-links a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -252,7 +252,7 @@ body {
 .card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  max-width: 370px;
+  cursor: pointer;
 }
 .cardimg {
   display: block;
@@ -377,6 +377,10 @@ body {
 .client-box:hover svg {
   fill: var(--blue);
 }
+.client-box:hover {
+  border: 1px solid var(--blue);
+}
+
 .envelope-icon {
   width: 16px;
   height: 16px;
